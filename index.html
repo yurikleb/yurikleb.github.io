@@ -1,0 +1,120 @@
+<!-- Built based on a tutorial by Andy-set-studio: https://github.com/Andy-set-studio -->
+<!-- https://piccalil.li/blog/a-simple-masonry-like-composable-layout/ -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yurikleb's Projects Portfolio</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <div class="header-text">
+                <h1>
+                    <img src="media/profile.png" width="50" height="50" alt="Yurikleb Logo">
+                    Yurikleb's Projects Portfolio
+                </h1>
+            </div>
+            <div class="header-badges">
+                <a href="https://www.instagram.com/yurikleb/" target="_blank">
+                    <img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white" alt="Instagram">
+                </a>
+                <a href="https://www.strava.com/athletes/84880356" target="_blank">
+                    <img src="https://img.shields.io/badge/Strava-FC4C02?style=for-the-badge&logo=strava&logoColor=white" alt="Strava">
+                </a>
+                <a href="https://www.linkedin.com/in/yuri-klebanov-6aa09839/" target="_blank">
+                    <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn">
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="masonry wrapper switcher">
+            <!-- Column 1 -->
+            <div class="flow">
+                <a href="https://github.com/dlx-designlab/Attune" target="_blank">
+                    <div class="image-container">
+                        <img src="media/attune.JPG" alt="Project Attune" loading="lazy">
+                        <div class="image-overlay">Attune</div>
+                    </div>
+                </a>
+                <a href="https://www.designlab.ac/post/transparent-intent" target="_blank">
+                    <div class="image-container">
+                        <img src="media/transparent-intent.jpg" alt="Transparent Intent" loading="lazy">
+                        <div class="image-overlay">Transparent Intent</div>
+                    </div>
+                </a>
+                <a href="https://www.youtube.com/watch?v=i32TUOhWviQ" target="_blank">
+                    <div class="image-container">
+                        <img src="media/google-popup.jpg" alt="Google Popup Store" loading="lazy">
+                        <div class="image-overlay">Google Popup Store</div>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Column 2 -->
+            <div class="flow">
+                <a href="https://github.com/yurikleb" target="_blank">
+                    <div class="image-container">
+                        <img src="media/desainer.jpg" alt="Project desAIner Platform" loading="lazy">
+                        <div class="image-overlay">desAIner Platform</div>
+                    </div>
+                </a>
+                <a href="http://synesthesiagame.com/" target="_blank">
+                    <div class="image-container">
+                        <img src="media/synesthesia.jpg" alt="Synesthesia Game" loading="lazy">
+                        <div class="image-overlay">Synesthesia Game</div>
+                    </div>
+                </a>
+                <a href="https://youtu.be/jyUrHr0x6wM?si=4uYILLajtoqGacBW" target="_blank">
+                    <div class="image-container">
+                        <img src="media/mood-to-font.jpg" alt="Mood to Font" loading="lazy">
+                        <div class="image-overlay">Mood to Font</div>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Column 3 -->
+            <div class="flow">
+                <a href="https://vimeo.com/172978067" target="_blank">
+                    <div class="image-container">
+                        <img src="media/vito.jpg" alt="Vito" loading="lazy">
+                        <div class="image-overlay">Vito</div>
+                    </div>
+                </a>
+                <a href="https://youtu.be/h0IzrGUK3LU" target="_blank">
+                    <div class="image-container">
+                        <img src="media/hummus_machine.jpg" alt="Hummus Machine" loading="lazy">
+                        <div class="image-overlay">Hummus Machine</div>
+                    </div>
+                </a>
+                <a href="https://vimeo.com/129477938" target="_blank">
+                    <div class="image-container">
+                        <img src="media/pellarball.jpg" alt="Pellarball" loading="lazy">
+                        <div class="image-overlay">Pellarball</div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="current-year"></span> yurikleb. All rights reserved.</p>
+    </footer>
+    
+    <script>
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
